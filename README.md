@@ -25,4 +25,4 @@ You can customize the file patterns for which the extension will be active. By d
 
 ## License
 
-[MIT](LICENSE)
+[Apache License 2.0](LICENSE)
