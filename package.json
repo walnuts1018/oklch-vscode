@@ -5,7 +5,7 @@
   "icon": "/public/icon.png",
   "publisher": "walnuts1018",
   "repository": "https://github.com/walnuts1018/oklch-vscode",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.98.0"
   },
