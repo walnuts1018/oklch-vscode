@@ -2,7 +2,7 @@
 
 This is a Visual Studio Code extension that provides a preview of OKLCH colors in your CSS files.
 
-![Screenshot](./image.png)
+![Screenshot](./public/screenshot.png)
 
 ## Features
 
