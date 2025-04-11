@@ -11,7 +11,7 @@ function getLanguages(): string[] {
 	} else {
 		vscode.window.showErrorMessage("oklch-vscode: languages should be an array");
 	}
-	return ['css', 'scss', "less", "tailwindcss"];
+	return ['css', 'scss', "less", "tailwindcss", "postcss"];
 }
 
 // This method is called when your extension is activated

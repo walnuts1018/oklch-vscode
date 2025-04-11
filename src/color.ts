@@ -14,11 +14,11 @@ export class DocumentColorProvider implements vscode.DocumentColorProvider {
       if (startPosition === undefined || endPosition === undefined) {
         return [];
       }
-      const range = new vscode.Range(document.positionAt(startPosition), document.positionAt(endPosition));
       const color = parse(match[0]);
       if (color?.mode === "oklch") {
         const rgba = converter('rgb')(color);
         const colorValue = new vscode.Color(rgba.r, rgba.g, rgba.b, rgba.alpha || 1);
+        const range = new vscode.Range(document.positionAt(startPosition), document.positionAt(endPosition));
         colors.push(new vscode.ColorInformation(range, colorValue));
       }
     }

@@ -26,9 +26,10 @@
             "css",
             "scss",
             "less",
-            "tailwindcss"
+            "tailwindcss",
+            "postcss"
           ],
-          "description": "The languages to enable oklch-vscode in. The extension will only be enabled in these languages. You can use the language id or the file extension. For example, 'css' or '.css'."
+          "description": "The languages to enable oklch-vscode in. The extension will only be enabled in these languages. You can use the language id or the file extension. For example, 'css' or 'postcss'."
         }
       }
     }
