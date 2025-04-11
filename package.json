@@ -2,7 +2,7 @@
   "name": "oklch-vscode",
   "displayName": "oklch-vscode",
   "description": "",
-  "icon": "/public/icon.png",
+  "icon": "public/icon.png",
   "publisher": "walnuts1018",
   "repository": "https://github.com/walnuts1018/oklch-vscode",
   "version": "0.1.0",

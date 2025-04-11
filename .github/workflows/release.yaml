@@ -22,8 +22,13 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: package.jsonの`$.version`を書き換える
+        run: |
+          echo "version: ${{ github.ref_name }}"
+          cat <<< $(jq  '.version = "${{ github.ref_name }}"' package.json) 1<> package.json
+
       - name: Build
-        run: vsce package
+        run: vsce package --yarn
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
