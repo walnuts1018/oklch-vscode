@@ -48,6 +48,6 @@ jobs:
         run: yarn global add vsce
 
       - name: Publish
-        run: vsce publish ${{ github.ref_name }} --packagePath $(find . -iname *.vsix)
+        run: vsce publish --packagePath $(find . -iname *.vsix)
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
