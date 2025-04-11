@@ -7,7 +7,7 @@
   "repository": "https://github.com/walnuts1018/oklch-vscode",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.98.0"
+    "vscode": "^1.99.2"
   },
   "categories": [
     "Other"
@@ -52,7 +52,7 @@
     "@types/culori": "^2.1.1",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.17.30",
-    "@types/vscode": "^1.98.0",
+    "@types/vscode": "^1.99.1",
     "@typescript-eslint/eslint-plugin": "^8.28.0",
     "@typescript-eslint/parser": "^8.28.0",
     "@vscode/test-cli": "^0.0.10",
