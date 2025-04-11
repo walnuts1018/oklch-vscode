@@ -1,0 +1,48 @@
+name: Release to Marketplace
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: "package.json"
+          cache: "yarn"
+          cache-dependency-path: "yarn.lock"
+
+      - name: Install vsce
+        run: yarn global add vsce
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: vsce package
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: extension
+          path: "*.vsix"
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+
+      - name: Install vsce
+        run: yarn global add vsce
+
+      - name: Publish
+        run: vsce publish ${{ github.ref_name }} --packagePath $(find . -iname *.vsix)
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
