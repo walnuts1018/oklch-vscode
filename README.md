@@ -12,14 +12,15 @@ This is a Visual Studio Code extension that provides a preview of OKLCH colors i
 
 ## Settings
 
-You can customize the file patterns for which the extension will be active. By default, it is set to `css`, `scss`, `less`, and `tailwindcss`. You can change this in your settings:
+You can customize the file patterns for which the extension will be active. By default, it is set to `css`, `scss`, `less`, `tailwindcss` and `postcss`. You can change this in your settings:
 
 ```json
 "oklch-vscode.languages": [
     "css",
     "scss",
     "less",
-    "tailwindcss"
+    "tailwindcss",
+    "postcss"
 ]
 ```
 
