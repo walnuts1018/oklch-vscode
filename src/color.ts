@@ -6,7 +6,7 @@ export class DocumentColorProvider implements vscode.DocumentColorProvider {
   provideDocumentColors(document: vscode.TextDocument, token: vscode.CancellationToken): vscode.ProviderResult<vscode.ColorInformation[]> {
     const colors: vscode.ColorInformation[] = [];
     const text = document.getText();
-    const regex = /(oklch\(.+\))/g;
+    const regex = /(oklch\(.+?\))/g;
     const matchList = text.matchAll(regex);
     for (const match of matchList) {
       const startPosition = match.index;

@@ -5,7 +5,7 @@ export class DocumentLinkProvider implements vscode.DocumentLinkProvider {
   provideDocumentLinks(document: vscode.TextDocument, token: vscode.CancellationToken): vscode.ProviderResult<vscode.DocumentLink[]> {
     const links: vscode.DocumentLink[] = [];
     const text = document.getText();
-    const regex = /(oklch\(.+\))/g;
+    const regex = /(oklch\(.+?\))/g;
     const matchList = text.matchAll(regex);
     for (const match of matchList) {
       const startPosition = match.index;
