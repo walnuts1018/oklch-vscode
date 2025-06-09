@@ -5,9 +5,6 @@ https://github.com/microsoft/vscode-css-languageservice/pull/436
 >[!WARNING]
 > If you are using the latest version of VSCode, you probably **do not need** to install this extension.
 > To avoid conflicts, we **strongly recommend** that you uninstall or disable this extension.
->
-> We will maintain this extension for a while until many users migrate.
-
 
 # oklch-vscode
 
