@@ -49,7 +49,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/culori": "^2.1.1",
+    "@types/culori": "^4.0.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.17.48",
     "@types/vscode": "^1.100.0",
