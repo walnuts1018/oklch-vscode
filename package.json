@@ -7,7 +7,7 @@
   "repository": "https://github.com/walnuts1018/oklch-vscode",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.100.2"
+    "vscode": "^1.100.3"
   },
   "categories": [
     "Other"
@@ -49,18 +49,18 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/culori": "^2.1.1",
+    "@types/culori": "^4.0.0",
     "@types/mocha": "^10.0.10",
-    "@types/node": "20.17.48",
+    "@types/node": "20.19.0",
     "@types/vscode": "^1.100.0",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
     "@typescript-eslint/parser": "^8.33.1",
-    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-cli": "^0.0.11",
     "@vscode/test-electron": "^2.5.2",
-    "eslint": "^9.24.0",
+    "eslint": "^9.28.0",
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.3",
-    "webpack": "^5.99.8",
+    "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
