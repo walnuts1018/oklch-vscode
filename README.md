@@ -1,3 +1,8 @@
+# vscode-css-languageservice now supports oklch 🎉🎉🎉
+
+If you are using the latest version of VSCode, you probably **do not need** to install this extension.
+
+
 # oklch-vscode
 
 This is a Visual Studio Code extension that provides a preview of OKLCH colors in your CSS files.
