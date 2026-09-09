@@ -244,10 +244,10 @@
   dependencies:
     undici-types "~6.21.0"
 
-"@types/vscode@^1.100.0":
-  version "1.100.0"
-  resolved "https://registry.yarnpkg.com/@types/vscode/-/vscode-1.100.0.tgz#35cd628a86b11587856df94be94054aab01f2f17"
-  integrity sha512-4uNyvzHoraXEeCamR3+fzcBlh7Afs4Ifjs4epINyUX/jvdk0uzLnwiDY35UKDKnkCHP5Nu3dljl2H8lR6s+rQw==
+"@types/vscode@^1.137.0":
+  version "1.137.0"
+  resolved "https://registry.yarnpkg.com/@types/vscode/-/vscode-1.137.0.tgz#73fd4ddb3e6b06a66ae74b42d8950506b6469a2c"
+  integrity sha512-0dc/BBWxkyUsJzXIZ7PkKSalThmS4xiBT+8YEDiWdCefRKHGVV5ZNkM5NB5ULYamallYJujIfncNoXWFlyzL8A==
 
 "@typescript-eslint/eslint-plugin@^8.33.1":
   version "8.33.1"
